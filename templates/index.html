@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}TopPlaylist{% endblock %}
+
+{% block page_content %}
+<div id="landing">
+        <div class="container">
+            <div id="landing-text">
+                <form action="/" method = "post" id = "search-area-index">
+                    <input type="text" name="search" id="search-area" placeholder = "Search here...">
+                    <select name="type" id="type">
+                        <option value="album">Albums</option>
+                        <option value="artist">Artists</option>
+                        <option value="track">Tracks</option>
+                    </select>
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block year %}{{ year }}{% endblock %}
